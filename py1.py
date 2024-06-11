@@ -1,3 +1,3 @@
 import webbrowser
 user_input = input("Enter Search item : ").replace(" ","+")
-webbrowser.open("dxc.udemy.com")
+webbrowser.open("https://google.com/search?q="+user_input)
