@@ -1,4 +1,8 @@
 import FreeSimpleGUI as fsg
-window = fsg.Window('My to-do window',layout=[''])
-window.read()
-window.close() 
+label = fsg.Text("Enter a to-do")
+buttonadd = fsg.Button("Add")
+inputtext = fsg.InputText(tooltip = "Enter todo")
+window = fsg.Window("My to-do app",layout = [[label],[inputtext,buttonadd]])
+window.read() 
+window.close()
+
